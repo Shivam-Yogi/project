@@ -12,38 +12,38 @@ An image operation and filter tool depends on Pillow, just for study and communi
 # Usage
 Show Help
 ```
-python image_filter.py -h
+python img_flt.py -h
 ```
 
 List filters
 ```
-python image_filter.py -l
+python img_flt.py -l
 ```
 
 Filter image
 ```
-python image_filter.py -f grey -i images/test.jpg -o images/
+python img_flt.py -f grey -i images/test.jpg -o images/
 ```
 
 Some filters need parameters
 
 ```
-python image_filter.py -f gaussian_blur -i images/test.jpg -o images/ -a radius=3
+python img_flt.py -f gaussian_blur -i images/test.jpg -o images/ -a radius=3
 ```
 
 Resize image (thumbnail)
 ```
-python image_filter.py -i images/test.jpg -o out.jpg -f rgb --width=300 --height=300
+python img_flt.py -i images/test.jpg -o out.jpg -f rgb --width=300 --height=300
 ```
 
 Add water mark image
 ```
-python image_filter.py -i images/test.jpg -o images/img_mark.jpg -f rgb -m images/water_mark.png -p RT
+python img_flt.py -i images/test.jpg -o images/img_mark.jpg -f rgb -m images/water_mark.png -p RT
 ```
 
 Add water mark text
 ```
-python image_filter.py -i images/test.jpg -o images/txt_mark.jpg -f rgb -x wwtg99 --font-size=40 --font-color=100,100,100,200
+python img_flt.py -i images/test.jpg -o images/txt_mark.jpg -f rgb -x wwtg99 --font-size=40 --font-color=100,100,100,200
 ```
 
 # Filters
